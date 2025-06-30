@@ -1,0 +1,7 @@
+1.Parking Lot Management Application
+Model a small parking lot with “n” slots. The N will be provided by the system's user.
+The slots should be divided into the following sizes:
+1. Small (Small and compact car)
+2. Large (Full-size car)
+3. Oversize (SUV or Truck)
+Manage available and filled slots. Support vehicle entry, exit, and status display.
