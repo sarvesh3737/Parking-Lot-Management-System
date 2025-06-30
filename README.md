@@ -58,7 +58,7 @@ parkinglot/
 1. **Clone the repo:**
 
    ```sh
-   git clone <your-github-repo-url>
+   git clone https://github.com/sarvesh3737/Parking-Lot-Management-System.git
    cd parkinglot
    ```
 
