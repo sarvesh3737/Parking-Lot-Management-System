@@ -15,14 +15,13 @@ A comprehensive parking lot management system that allows users to manage parkin
 - **Input Validation**: Comprehensive validation for all user inputs
 - **Error Handling**: Robust error handling with user-friendly messages
 
-## File Structure
 parkinglot/
-├── parking_lot_interactive.py # Main interactive application
-├── parking_lot.py # Core parking lot management class
-├── parking_spot.py # Individual parking spot class
-├── vehicle.py # Abstract vehicle base class
-├── vehicle_type.py # Vehicle and slot size enums
-├── car.py # Car vehicle classes (SmallCar, LargeCar, SUV, Truck)
-├── parking_lot_demo.py # Demo/example usage
-├── README.md # This file
-└── info.txt # Project requirements
+│
+├── parking_lot_interactive.py   # Main CLI application (entry point)
+├── parking_lot.py               # ParkingLot singleton and logic
+├── parking_spot.py              # ParkingSpot class
+├── vehicle.py                   # Abstract base class for vehicles
+├── car.py                       # SmallCar, LargeCar, SUV, Truck classes
+├── vehicle_type.py              # Enums: VehicleType, SlotSize
+├── README.md                    # Project documentation (this file)
+└── info.txt                     # Project requirements/spec
