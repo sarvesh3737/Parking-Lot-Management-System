@@ -113,24 +113,24 @@ You can manually test the application interactively. Here is an example test seq
 1. Initialize with **8 slots**.
 2. Park the following vehicles in order:
 
-   * Small Car, License Plate: `S1`
-   * Small Car, License Plate: `S2`
-   * Large Car, License Plate: `L1`
-   * Large Car, License Plate: `L2`
-   * SUV, License Plate: `O1`
-   * Truck, License Plate: `O2`
-3. Try to park another Small Car with plate `S1` (duplicate) — should be rejected.
+   * Small Car, License Plate: `S01`
+   * Small Car, License Plate: `S02`
+   * Large Car, License Plate: `L01`
+   * Large Car, License Plate: `L02`
+   * SUV, License Plate: `O01`
+   * Truck, License Plate: `O02`
+3. Try to park another Small Car with plate `S01` (duplicate) — should be rejected.
 4. Try to park another SUV (should fail if all oversize slots are filled).
-5. Unpark vehicle with license plate `L1`.
-6. Park a new Large Car, License Plate: `L3` (should succeed, since a large slot became available).
+5. Unpark vehicle with license plate `L01`.
+6. Park a new Large Car, License Plate: `L03` (should succeed, since a large slot became available).
 7. Display availability/status at each step for validation.
 
 ### Expected Results
 
 * After step 2, all slot types should be either full or partially full depending on distribution.
-* Duplicate parking (`S1`) is not allowed (error message).
+* Duplicate parking (`S01`) is not allowed (error message).
 * Trying to park an SUV when oversize slots are full should show a "no slots available" message.
-* After unparking `L1` and parking `L3`, all large slots should be full again.
+* After unparking `L01` and parking `L03`, all large slots should be full again.
 
 #### Example Output Snippet
 
@@ -140,17 +140,17 @@ Parking lot initialized with 8 slots:
   Large slots: 2
   Oversize slots: 2
 
-Vehicle S1 parked successfully in spot 0
-Vehicle S2 parked successfully in spot 1
-Vehicle L1 parked successfully in spot 4
-Vehicle L2 parked successfully in spot 5
-Vehicle O1 parked successfully in spot 6
-Vehicle O2 parked successfully in spot 7
+Vehicle S01 parked successfully in spot 0
+Vehicle S02 parked successfully in spot 1
+Vehicle L01 parked successfully in spot 4
+Vehicle L02 parked successfully in spot 5
+Vehicle O01 parked successfully in spot 6
+Vehicle O02 parked successfully in spot 7
 
-Vehicle with license plate S1 is already parked
+Vehicle with license plate S01 is already parked
 No oversize slots available!
-Vehicle L1 unparked successfully
-Vehicle L3 parked successfully in spot 4
+Vehicle L01 unparked successfully
+Vehicle L03 parked successfully in spot 4
 
 === PARKING LOT STATUS ===
 Small slots: 2/4 available
