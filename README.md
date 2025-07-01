@@ -2,7 +2,6 @@
 
 A command-line application for managing a parking lot.
 Users can specify the total number of slots and manage entry, exit, and status of vehicles of various sizes.
-*All data is stored in memory—no database required!*
 
 ---
 
@@ -51,7 +50,7 @@ parkinglot/
 
 ### Requirements
 
-* Python 3.7 or higher
+* Python
 
 ### Steps
 
@@ -105,8 +104,6 @@ Vehicle ABC123 parked successfully in spot 6
 ---
 
 ## Test Data & Expected Results
-
-You can manually test the application interactively. Here is an example test sequence and the expected outcome:
 
 ### Test Scenario
 
